@@ -1,10 +1,13 @@
-from PyQt5 import QtWidgets
-from PyQt5 import uic
 import sys
 
-from constants import CONVERTER_ERROR, RATES, USERS, DEFAULT_RESULT_VALUE, RESULT_LABEL, UI_FILE, LOGIN_ERROR, \
-    LOGIN_BUTTON_RELEASED, LOGIN_BUTTON_PRESSED, LOGOUT_BUTTON_RELEASED, LOGOUT_BUTTON_PRESSED, \
-    CLEAR_OR_CONVERT_BUTTON_RELEASED, CLEAR_OR_CONVERT_BUTTON_PRESSED
+from PyQt5 import QtWidgets, uic
+
+from constants import (CLEAR_OR_CONVERT_BUTTON_PRESSED,
+                       CLEAR_OR_CONVERT_BUTTON_RELEASED, CONVERTER_ERROR,
+                       DEFAULT_RESULT_VALUE, LOGIN_BUTTON_PRESSED,
+                       LOGIN_BUTTON_RELEASED, LOGIN_ERROR,
+                       LOGOUT_BUTTON_PRESSED, LOGOUT_BUTTON_RELEASED, RATES,
+                       RESULT_LABEL, UI_FILE, USERS)
 
 
 class UI(QtWidgets.QMainWindow):
@@ -99,5 +102,5 @@ class UI(QtWidgets.QMainWindow):
 
 
 app = QtWidgets.QApplication(sys.argv)
-UIWindow = UI()
+ui_window = UI()
 app.exec_()
